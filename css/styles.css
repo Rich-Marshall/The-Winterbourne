@@ -2,6 +2,47 @@
 /* applies to screens smaller than 500px */
 /* and all other screen sized unless overwritten below  */
 
+body {
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px 1000px 300px;
+    grid-gap: 0px;
+    grid-template-areas:
+        "header header"
+        "cover cover"
+        "content content"
+        "footer footer"
+}
+
+header {
+    grid-area: header;
+    background: #757575;
+}
+
+content {
+    grid-area: cover;
+    background: #9E9999;
+}
+
+
+main {
+    grid-area: content;
+    background: #FFF7D6;
+
+}
+
+
+footer {
+    grid-area: footer;
+    background: #0F4F5C;
+}
+
+
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
@@ -22,3 +63,7 @@
 }
 
 /* Color Hex Codes:
+menu grey: #757575
+placeholder grey: #9E9999
+winterbourne yellow: #FFF7D6
+winterbourne blue-green: #0F4F5C

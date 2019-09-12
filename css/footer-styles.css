@@ -1,0 +1,27 @@
+/* MOBILE AND GLOBAL STYLES */
+/* applies to screens smaller than 500px */
+/* and all other screen sized unless overwritten below  */
+
+
+
+
+
+/* TABLET STYLES */
+@media screen and (min-width: 500px) {
+    /* applies to screens wider than 499px */
+
+
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1000px) {
+    /* applies to screens wider than 999px */
+
+}
+
+/*MAX HEIGHT STYLES*/
+@media screen and (max-height: 650px) {
+
+}
+
+/* Color Hex Codes:
