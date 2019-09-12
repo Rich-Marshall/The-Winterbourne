@@ -2,7 +2,13 @@
 /* applies to screens smaller than 500px */
 /* and all other screen sized unless overwritten below  */
 
-
+nav {
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    background: #757575;
+    opacity: 0.5
+}
 
 
 

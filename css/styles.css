@@ -10,28 +10,24 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 300px 1000px 300px;
+    grid-template-rows: 100vh 1000px 300px; /*will be auto*/
     grid-gap: 0px;
     grid-template-areas:
-        "header header"
-        "cover cover"
         "content content"
+        "main main"
         "footer footer"
 }
 
-header {
-    grid-area: header;
-    background: #757575;
-}
 
 content {
-    grid-area: cover;
+    grid-area: content;
     background: #9E9999;
+
 }
 
 
 main {
-    grid-area: content;
+    grid-area: main;
     background: #FFF7D6;
 
 }
@@ -54,7 +50,14 @@ footer {
 /* DESKTOP STYLES */
 @media screen and (min-width: 1000px) {
     /* applies to screens wider than 999px */
-
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100vh 1000px 300px; /*will be auto*/
+        grid-template-areas:
+            "content content content content content content"
+            "main main main main main main"
+            "footer footer footer footer footer footer"
+    }
 }
 
 /*MAX HEIGHT STYLES*/
@@ -67,3 +70,4 @@ menu grey: #757575
 placeholder grey: #9E9999
 winterbourne yellow: #FFF7D6
 winterbourne blue-green: #0F4F5C
+*/
