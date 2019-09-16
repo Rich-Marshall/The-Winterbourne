@@ -8,7 +8,9 @@
   box-sizing: border-box;
 }
 
-
+body.stop-transition .nav-links {
+  transition: none !important;
+}
 
 nav {
 
@@ -43,7 +45,6 @@ nav {
 }
 
 .nav-links {
-
   display: flex;
   flex-direction: column;
   opacity: 1;
