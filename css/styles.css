@@ -13,7 +13,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100vh 1000px 300px; /*will be auto*/
+    grid-template-rows: 100vh 1000px 65vh; /*will be auto*/
     grid-gap: 0px;
     grid-template-areas:
         "content content"
@@ -25,14 +25,19 @@ body {
 content {
     grid-area: content;
     background: #9E9999;
+}
 
+img.ri {
+    z-index: 1;
+	  position: absolute;
+	  max-width: 150%;
+    min-width: 700px;
 }
 
 
 main {
     grid-area: main;
     background: #FFF7D6;
-
 }
 
 

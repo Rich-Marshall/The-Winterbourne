@@ -3,12 +3,54 @@
 /* and all other screen sized unless overwritten below  */
 
 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  20vh 40vh 5vh;
+    grid-gap: 0px;
+    grid-template-areas:
+        "phone phone"
+        "restaurant bar"
+        "bottom bottom"
+}
+
+item-a {
+  grid-area: phone;
+  background: red;
+}
+
+item-b {
+  grid-area: restaurant;
+  background: blue;
+}
+
+item-c {
+  grid-area: bar;
+  background: orange;
+}
+
+item-d {
+  grid-area: bottom;
+  background: green;
+}
+
+.phone {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
 
+}
+
+
+
+/* position: absolute; */
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
     /* applies to screens wider than 499px */
+
 
 
 }
