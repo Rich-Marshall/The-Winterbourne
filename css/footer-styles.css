@@ -6,7 +6,7 @@
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  20vh 40vh 5vh;
+    grid-template-rows:  20vh 45vh 5vh;
     grid-gap: 0px;
     grid-template-areas:
         "phone phone"
@@ -15,33 +15,85 @@
 }
 
 item-a {
+  color: #FFF7D6;
   grid-area: phone;
-  background: red;
+  position: relative;
+}
+
+item-a p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 3vh;
+}
+
+.big {
+  font-size: 2em;
+}
+.small {
+  font-size: 0.5em;
 }
 
 item-b {
+  color: #FFF7D6;
   grid-area: restaurant;
-  background: blue;
+  position: relative;
+}
+
+item-b p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 2vh;
 }
 
 item-c {
   grid-area: bar;
-  background: orange;
+  color: #FFF7D6;
+  position: relative;
+}
+
+item-c p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 2vh;
 }
 
 item-d {
+
   grid-area: bottom;
-  background: green;
-}
-
-.phone {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
+  color: #FFF7D6;
+  position: relative;
+  height: 5vh;
 
 }
+
+item-d p {
+    border-top: thin solid #FFF7D6;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 3vh;
+    width: 50%;
+}
+
 
 
 
@@ -58,6 +110,22 @@ item-d {
 /* DESKTOP STYLES */
 @media screen and (min-width: 1000px) {
     /* applies to screens wider than 999px */
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  30vh 5vh;
+        grid-gap: 0px;
+        grid-template-areas:
+            "restaurant phone bar"
+            "restaurant bottom bar"
+
+    }
+
+    item-d p {
+        border-top: thin solid #FFF7D6;
+        width: 100%;
+    }
 
 }
 
