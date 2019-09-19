@@ -51,6 +51,7 @@ main {
 footer {
     grid-area: footer;
     background: #0F4F5C;
+    border-top: thin solid #E5E4DE;
 }
 
 

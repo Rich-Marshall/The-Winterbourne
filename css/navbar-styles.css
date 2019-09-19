@@ -22,6 +22,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: thin solid #E5E4DE;
+    box-shadow: 0px 1px 20px #424242;
 }
 
 .cover {
@@ -34,6 +36,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: relative;
+  border-bottom: thin solid #E5E4DE;
+  box-shadow: 0px 1px 20px #424242;
 }
 
 .logo {
@@ -63,7 +67,7 @@ nav {
   position: absolute;
     top: 200px;
     width: 100vw;
-    height: 40vh;
+    height: 400px;
     background-color: #424242;
 
 }
@@ -140,14 +144,15 @@ nav {
     }
     .nav-links {
 
-      transform: translateY(-160%);
+      transform: translateY(-155%);
       transition: transform 1s ease-in-out;
       padding-bottom: 15px;
+      border-bottom: thin solid #0F4F5C;
 
     }
 
     .nav-active {
-      transform: translateY(0%);
+      transform: translateY(-3%);
       transition: transform 1s ease-in-out;
     }
 
@@ -204,6 +209,7 @@ nav {
 
     nav {
         height: 150px;
+        border-bottom: thin solid #E5E4DE;
     }
 
     .cover {
@@ -226,9 +232,10 @@ nav {
       align-items: center;
       justify-content: space-around;
         width: 50%;
-        height: 150px;
+        height: 140px;
       font-size: 20px;
       position: static;
+
     }
 
     .cover {
