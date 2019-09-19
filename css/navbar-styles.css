@@ -13,6 +13,7 @@ body.stop-transition .nav-links {
 }
 
 nav {
+    position: relative;
     width: 100%;
     height: 200px;
     background-color: #757575;

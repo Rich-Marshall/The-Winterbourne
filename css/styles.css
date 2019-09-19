@@ -25,14 +25,19 @@ body {
 content {
     grid-area: content;
     background: #9E9999;
+    margin: 0;
+    position: relative;
+    text-align: center;
 }
 
-img.ri {
-    z-index: 1;
-	  position: absolute;
-	  max-width: 150%;
-    min-width: 700px;
+content>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
+
+
 
 
 main {
