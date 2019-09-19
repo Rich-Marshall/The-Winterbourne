@@ -16,7 +16,7 @@
 
 item-a {
   z-index: ;
-  color: #FFF7D6;
+  color: #E5E4DE;
   grid-area: phone;
   position: relative;
 }
@@ -40,8 +40,7 @@ item-a p {
 }
 
 item-b {
-
-  color: #FFF7D6;
+  color: #E5E4DE;
   grid-area: restaurant;
   position: relative;
 }
@@ -59,7 +58,7 @@ item-b p {
 
 item-c {
   grid-area: bar;
-  color: #FFF7D6;
+  color: #E5E4DE;
   position: relative;
 }
 
@@ -77,14 +76,14 @@ item-c p {
 item-d {
 
   grid-area: bottom;
-  color: #FFF7D6;
+  color: #E5E4DE;
   position: relative;
   height: 50px;
 
 }
 
 item-d p {
-    border-top: thin solid #FFF7D6;
+    border-top: thin solid #E5E4DE;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -125,8 +124,15 @@ item-d p {
     }
 
     item-d p {
-        border-top: thin solid #FFF7D6;
+        border-top: thin solid #E5E4DE;
         width: 100%;
+    }
+
+    item-b p {
+      line-height: 17px;
+    }
+    item-c p {
+      line-height: 17px;
     }
 
 }

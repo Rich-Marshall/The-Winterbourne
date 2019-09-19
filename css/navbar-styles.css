@@ -17,7 +17,7 @@ nav {
     position: fixed;
     width: 100%;
     height: 200px;
-    background-color: #757575;
+    background-color: #424242;
     opacity: 1;
     display: flex;
     justify-content: space-around;
@@ -28,7 +28,7 @@ nav {
   z-index: 200;
   width: 100%;
   height: 200px;
-  background-color: #757575;
+  background-color: #424242;
   opacity: 1;
   display: flex;
   justify-content: space-around;
@@ -43,6 +43,13 @@ nav {
     color: #0F4F5C;
     letter-spacing: 5px;
     font-size: 30px;
+    width: 300px;
+}
+
+.logo>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -57,12 +64,12 @@ nav {
     top: 200px;
     width: 100vw;
     height: 40vh;
-    background-color: #757575;
+    background-color: #424242;
 
 }
 
 .nav-links a {
-  color: #FFF7D6;
+  color: #E5E4DE;
   text-decoration: none;
 }
 
@@ -77,9 +84,8 @@ nav {
   justify-content: space-around;
     width: 60%;
   z-index: 301;
-  padding-top: 66px;
+  padding-top: 100px;
   position: absolute;
-
 }
 
 .burger {
@@ -95,14 +101,14 @@ nav {
 
    width: 25px;
    height: 3px;
-   background-color: #FFF7D6;
+   background-color: #E5E4DE;
    margin: 5px;
    border-radius: 3px;
    transition: all 0.3s ease;
 }
 
 .fa-yellow{
-   color: #FFF7D6;
+   color: #E5E4DE;
  }
 
 
@@ -124,6 +130,8 @@ nav {
     body {
       overflow-x: hidden;
     }
+
+
     .nav-links li {
       border-top: thin solid #0F4F5C;
       padding-top: 25px;
@@ -142,6 +150,8 @@ nav {
       transform: translateY(0%);
       transition: transform 1s ease-in-out;
     }
+
+
 
     @keyframes navLinkFadeIn{
       from{
@@ -193,12 +203,17 @@ nav {
     /* applies to screens wider than 1000px */
 
     nav {
-        height: 200px;
+        height: 150px;
+    }
+
+    .cover {
+      height: 150px;
     }
 
     .logo {
         position: static;
         padding-bottom: 0;
+
     }
 
     .burger {
@@ -211,7 +226,7 @@ nav {
       align-items: center;
       justify-content: space-around;
         width: 50%;
-        height: 200px;
+        height: 150px;
       font-size: 20px;
       position: static;
     }
@@ -229,7 +244,8 @@ nav {
 }
 
 /* Color Hex Codes:
-menu grey: #757575
+menu grey: #424242
+text: #E5E4DE
 placeholder grey: #9E9999
 winterbourne yellow: #FFF7D6
 winterbourne blue-green: #0F4F5C
