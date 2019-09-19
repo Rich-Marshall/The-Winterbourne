@@ -6,7 +6,7 @@
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  20vh 45vh 5vh;
+    grid-template-rows:  150px 450px 50px;
     grid-gap: 0px;
     grid-template-areas:
         "phone phone"
@@ -15,6 +15,7 @@
 }
 
 item-a {
+  z-index: ;
   color: #FFF7D6;
   grid-area: phone;
   position: relative;
@@ -28,7 +29,7 @@ item-a p {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 3vh;
+    line-height: 20px;
 }
 
 .big {
@@ -39,6 +40,7 @@ item-a p {
 }
 
 item-b {
+
   color: #FFF7D6;
   grid-area: restaurant;
   position: relative;
@@ -52,7 +54,7 @@ item-b p {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 2vh;
+    line-height: 25px;
 }
 
 item-c {
@@ -69,7 +71,7 @@ item-c p {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 2vh;
+    line-height: 25px;
 }
 
 item-d {
@@ -77,7 +79,7 @@ item-d {
   grid-area: bottom;
   color: #FFF7D6;
   position: relative;
-  height: 5vh;
+  height: 50px;
 
 }
 
@@ -90,7 +92,7 @@ item-d p {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 3vh;
+    line-height: 20px;
     width: 50%;
 }
 
@@ -114,7 +116,7 @@ item-d p {
     .footer-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:  30vh 5vh;
+        grid-template-rows:  350px 50px;
         grid-gap: 0px;
         grid-template-areas:
             "restaurant phone bar"
