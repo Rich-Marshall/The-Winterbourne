@@ -95,6 +95,11 @@ item-d p {
     width: 50%;
 }
 
+item-d p a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 
