@@ -4,6 +4,32 @@
 
 
 
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  300px 300px 400px;
+    grid-template-areas:
+        "book book book"
+        "menu menu menu"
+        "pic pic pic"
+
+    }
+
+    index-book {
+      grid-area: book;
+      background: red;
+    }
+
+    index-menu {
+      grid-area: menu;
+      background: blue;
+    }
+
+    index-pic {
+      grid-area: pic;
+      background: green;
+    }
+
 
 
 /* TABLET STYLES */
@@ -17,7 +43,11 @@
 @media screen and (min-width: 1000px) {
     /* applies to screens wider than 999px */
 
+
+
 }
+
+
 
 /*MAX HEIGHT STYLES*/
 @media screen and (max-height: 650px) {
