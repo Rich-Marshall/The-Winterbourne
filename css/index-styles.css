@@ -6,29 +6,52 @@
 
 .index-grid {
     display: grid;
+    grid-gap: 1px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:  300px 300px 400px;
     grid-template-areas:
-        "book book book"
-        "menu menu menu"
-        "pic pic pic"
+        "bookpic book book"
+        "menu menu menupic"
+        "picleft picmid picright"
 
     }
+
 
     index-book {
       grid-area: book;
-      background: red;
+      background: #FFF7D6;
     }
+    index-bookpic {
+      grid-area: bookpic;
+      background: #9E9999;
+    }
+
 
     index-menu {
       grid-area: menu;
-      background: blue;
+      background: #FFF7D6;
+    }
+    index-menupic {
+      grid-area: menupic;
+      background: #9E9999;
     }
 
-    index-pic {
-      grid-area: pic;
-      background: green;
+    index-picleft {
+      grid-area: picleft;
+      background: #9E9999;
     }
+    index-picmid {
+      grid-area: picmid;
+      background: #9E9999;
+    }
+    index-picright {
+      grid-area: picright;
+      background: #9E9999;
+    }
+
+
+
+
 
 
 

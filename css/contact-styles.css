@@ -2,9 +2,33 @@
 /* applies to screens smaller than 500px */
 /* and all other screen sized unless overwritten below  */
 
+.contact-grid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  500px 300px;
+    grid-template-areas:
+        "contact contact contact"
+        "picleft picmid picright"
+    }
 
+    contact-contact {
+      grid-area: contact;
+      background: #FFF7D6;
+    }
 
-
+    contact-picleft {
+      grid-area: picleft;
+      background: #9E9999;
+    }
+    contact-picmid {
+      grid-area: picmid;
+      background: #9E9999;
+    }
+    contact-picright {
+      grid-area: picright;
+      background: #9E9999;
+    }
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
