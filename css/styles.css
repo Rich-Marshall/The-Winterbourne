@@ -68,7 +68,7 @@ footer {
     /* applies to screens wider than 999px */
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100vh 1000px 400px; /*will be auto*/
+        grid-template-rows: 100vh auto 400px; /*will be auto*/
         grid-template-areas:
             "content content content content content content"
             "main main main main main main"

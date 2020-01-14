@@ -3,8 +3,77 @@
 /* and all other screen sized unless overwritten below  */
 
 
+.gallery-grid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  400px 300px 500px 300px 500px;
+    grid-template-areas:
+        "gallery gallery gallery"
+        "one-left one-mid one-right"
+        "two-left two-left two-right"
+        "three-left three-mid three-right"
+        "four-left four-right four-right"
 
+    }
 
+    gallery-gallery {
+      grid-area: gallery;
+      background: #FFF7D6;
+    }
+
+    gallery-one-left {
+      grid-area: one-left;
+      background: #9E9999;
+    }
+    gallery-one-mid {
+      grid-area: one-mid;
+      background: #9E9999;
+    }
+    gallery-one-right {
+      grid-area: one-right;
+      background: #9E9999;
+    }
+
+    gallery-two-left {
+      grid-area: two-left;
+      background: #9E9999;
+    }
+    gallery-two-right {
+      grid-area: two-right;
+      background: #9E9999;
+    }
+
+    gallery-three-left {
+      grid-area: three-left;
+      background: #9E9999;
+    }
+    gallery-three-mid {
+      grid-area: three-mid;
+      background: #9E9999;
+    }
+    gallery-three-right {
+      grid-area: three-right;
+      background: #9E9999;
+    }
+
+    gallery-two-left {
+      grid-area: two-left;
+      background: #9E9999;
+    }
+    gallery-two-right {
+      grid-area: two-right;
+      background: #9E9999;
+    }
+
+    gallery-four-left {
+      grid-area: four-left;
+      background: #9E9999;
+    }
+    gallery-four-right {
+      grid-area: four-right;
+      background: #9E9999;
+    }
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
