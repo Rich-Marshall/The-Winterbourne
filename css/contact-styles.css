@@ -2,6 +2,15 @@
 /* applies to screens smaller than 500px */
 /* and all other screen sized unless overwritten below  */
 
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .contact-grid {
     display: grid;
     grid-gap: 1px;
