@@ -52,11 +52,12 @@ body {
       color: #E5E4DE;
       outline: none;
       padding: 20px;
+      width: 150px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 20px;
-      margin: 4px 2px;
+      margin: 10px 10px;
       border-radius: 100px;
 }
 
