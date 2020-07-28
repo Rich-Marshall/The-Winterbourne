@@ -15,7 +15,7 @@ body {
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 1fr;
-    grid-template-rows:  400px 300px 300px 300px 500px 500px 300px 300px 300px 500px 500px;
+    grid-template-rows:  300px 300px 300px 300px 500px 500px 300px 300px 300px 500px 500px;
     grid-template-areas:
         "gallery"
         "one-left"
@@ -35,7 +35,30 @@ body {
     gallery-gallery {
       grid-area: gallery;
       background: #FFF7D6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     }
+
+    .gallery-header {
+      text-align: center;
+
+    }
+
+    .button {
+      cursor: pointer;
+      background-color: #0F4F5C;
+      color: #E5E4DE;
+      outline: none;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      border-radius: 100px;
+}
 
     gallery-one-left {
       grid-area: one-left;
@@ -155,7 +178,7 @@ body {
         display: grid;
         grid-gap: 1px;
         grid-template-columns: 1fr;
-        grid-template-rows:  750px 450px 450px 450px 750px 750px 450px 450px 450px 750px 750px;
+        grid-template-rows:  400px 450px 450px 450px 750px 750px 450px 450px 450px 750px 750px;
         grid-template-areas:
             "gallery"
             "one-left"
