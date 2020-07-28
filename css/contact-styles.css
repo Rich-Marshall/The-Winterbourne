@@ -15,13 +15,50 @@ body {
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 1fr;
-    grid-template-rows:  500px 300px 300px 300px;
+    grid-template-rows:  400px 300px 300px 300px;
     grid-template-areas:
         "contact"
         "picleft"
         "picmid"
         "picright"
     }
+
+    hr {
+
+      height: 2px;
+      background-color: #0F4F5C;
+      border: none;
+
+    }
+
+    contact-contact {
+      grid-area: gallery;
+      background: #FFF7D6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .contact-header {
+      text-align: center;
+
+    }
+
+    .button {
+      cursor: pointer;
+      background-color: #0F4F5C;
+      color: #E5E4DE;
+      outline: none;
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      margin: 10px 10px;
+      border-radius: 100px;
+}
 
     contact-contact {
       grid-area: contact;
@@ -32,19 +69,50 @@ body {
       grid-area: picleft;
       background: #9E9999;
     }
+    contact-picleft>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
     contact-picmid {
       grid-area: picmid;
       background: #9E9999;
     }
+    contact-picmid>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
     contact-picright {
       grid-area: picright;
       background: #9E9999;
+    }
+    contact-picright>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
     }
 
 /* TABLET STYLES */
 @media screen and (min-width: 501px) {
     /* applies to screens wider than 500px */
 
+    .contact-grid {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 1fr;
+        grid-template-rows:  400px 450px 450px 450px;
+        grid-template-areas:
+            "contact"
+            "picleft"
+            "picmid"
+            "picright"
+        }
 
 }
 
@@ -56,7 +124,7 @@ body {
         display: grid;
         grid-gap: 1px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:  500px 300px;
+        grid-template-rows:  400px 300px;
         grid-template-areas:
             "contact contact contact"
             "picleft picmid picright"
