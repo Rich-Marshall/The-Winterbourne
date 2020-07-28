@@ -115,8 +115,8 @@ item-d p a {
 /* position: absolute; */
 
 /* TABLET STYLES */
-@media screen and (min-width: 500px) {
-    /* applies to screens wider than 499px */
+@media screen and (min-width: 501px) {
+    /* applies to screens wider than 500px */
 
 
 
