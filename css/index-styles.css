@@ -12,19 +12,21 @@ body {
 }
 
 
-
 .index-grid {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  300px 300px 400px;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  300px 500px 300px 500px 400px 400px 400px;
     grid-template-areas:
-        "bookpic book book"
-        "menu menu menupic"
-        "picleft picmid picright"
+        "bookpic"
+        "book"
+        "menupic"
+        "menu"
+        "picleft"
+        "picmid"
+        "picright"
 
     }
-
 
     index-book {
       grid-area: book;
@@ -63,7 +65,6 @@ body {
 
 
 
-
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
     /* applies to screens wider than 499px */
@@ -74,6 +75,19 @@ body {
 /* DESKTOP STYLES */
 @media screen and (min-width: 1000px) {
     /* applies to screens wider than 999px */
+
+    .index-grid {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  300px 300px 400px;
+        grid-template-areas:
+            "bookpic book book"
+            "menu menu menupic"
+            "picleft picmid picright"
+
+        }
+
 
 
 

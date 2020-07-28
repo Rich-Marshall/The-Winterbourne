@@ -11,20 +11,26 @@ body {
     box-sizing: border-box;
 }
 
-
 .gallery-grid {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  400px 300px 500px 300px 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows:  400px 300px 300px 300px 500px 500px 300px 300px 300px 500px 500px;
     grid-template-areas:
-        "gallery gallery gallery"
-        "one-left one-mid one-right"
-        "two-left two-left two-right"
-        "three-left three-mid three-right"
-        "four-left four-right four-right"
+        "gallery"
+        "one-left"
+        "one-mid"
+        "one-right"
+        "two-left"
+        "two-right"
+        "three-left"
+        "three-mid"
+        "three-right"
+        "four-left"
+        "four-right"
 
     }
+
 
     gallery-gallery {
       grid-area: gallery;
@@ -94,6 +100,19 @@ body {
 /* DESKTOP STYLES */
 @media screen and (min-width: 1000px) {
     /* applies to screens wider than 999px */
+
+    .gallery-grid {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  400px 300px 500px 300px 500px;
+        grid-template-areas:
+            "gallery gallery gallery"
+            "one-left one-mid one-right"
+            "two-left two-left two-right"
+            "three-left three-mid three-right"
+            "four-left four-right four-right"
+        }
 
 }
 
