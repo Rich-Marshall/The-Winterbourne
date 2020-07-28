@@ -55,7 +55,6 @@ nav {
     padding-bottom: 66px;
     color: #0F4F5C;
     letter-spacing: 5px;
-    font-size: 30px;
     width: 300px;
 }
 
@@ -65,6 +64,8 @@ nav {
   object-fit: contain;
 }
 
+
+
 .nav-links {
   z-index: 10;
   display: flex;
@@ -72,7 +73,6 @@ nav {
   opacity: 1;
   justify-content: space-around;
   text-align: center;
-  font-size: 30px;
   position: absolute;
     top: 200px;
     width: 100vw;
@@ -82,9 +82,20 @@ nav {
 }
 
 .nav-links a {
+  padding: 25px 22px;
   color: #E5E4DE;
   text-decoration: none;
+
 }
+
+.nav-links a:hover {
+  background: radial-gradient(closest-side, #0F4F5C, #424242);
+  transition: color 1.5s linear;
+  color: #A9A9A9;
+
+}
+
+
 
 .nav-links li {
   list-style: none;
@@ -120,9 +131,16 @@ nav {
    transition: all 0.3s ease;
 }
 
-.fa-yellow{
+.fa-yellow {
    color: #E5E4DE;
  }
+
+ .fa-yellow:hover {
+   padding: 10px 0;
+   transition: color 1s linear;
+   background: radial-gradient(closest-side, #0F4F5C, #424242);
+   color: #A9A9A9;
+  }
 
 
 
@@ -242,7 +260,7 @@ nav {
       justify-content: space-around;
         width: 50%;
         height: 140px;
-      font-size: 20px;
+
       position: static;
 
     }
