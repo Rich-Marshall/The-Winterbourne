@@ -21,6 +21,12 @@ body.stop-transition .nav-links {
   transition: none !important;
 }
 
+a {
+
+}
+
+
+
 nav {
     z-index: 5;
     position: fixed;

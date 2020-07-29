@@ -8,8 +8,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #424242;
 }
 
+a.contact-color {
+  color: #0F4F5C;
+}
 
 .contact-grid {
     display: grid;
@@ -26,7 +30,7 @@ body {
     hr {
 
       height: 2px;
-      background-color: #0F4F5C;
+      background-color: #424242;
       border: none;
 
     }
