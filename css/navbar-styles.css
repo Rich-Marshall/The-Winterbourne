@@ -145,6 +145,10 @@ nav {
    color: #E5E4DE;
  }
 
+ .fa-yellow-footer {
+    color: #E5E4DE;
+  }
+
  .fa-yellow:hover {
    padding: 10px 0;
    transition: color 1s linear;
