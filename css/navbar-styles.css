@@ -77,7 +77,7 @@ nav {
 
 .nav-links {
   z-index: 10;
-  display: absolute;
+  display: flex;
   flex-direction: column;
   opacity: 1;
   justify-content: space-around;
