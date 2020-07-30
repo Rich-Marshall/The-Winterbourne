@@ -42,7 +42,7 @@ main {
 }
 main-img {
 	grid-area: main-img;
-	background: #FFF7D6;
+	background-color: : red;
 }
 footer {
 	grid-area: footer;

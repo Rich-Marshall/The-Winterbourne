@@ -28,6 +28,18 @@ body {
                         "four-left"
                         "four-right"
 }
+
+.gallery-img-grid {
+	background-color: red;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 300px 500px 300px 500px;
+	grid-template-areas:  "one-left one-mid one-right"
+												"two-left two-left two-right"
+												"three-left three-mid three-right"
+												"four-left four-right four-right"
+}
+
 hr {
 	height: 2px;
 	background-color: #0F4F5C;
@@ -211,12 +223,8 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 400px 300px 500px 300px 500px;
+		grid-template-rows: 400px;
 		grid-template-areas:  "top top top"
-                          "one-left one-mid one-right"
-                          "two-left two-left two-right"
-                          "three-left three-mid three-right"
-                          "four-left four-right four-right"
 	}
 	gallery-one-left>img {
 		border-bottom: 1px solid white;
