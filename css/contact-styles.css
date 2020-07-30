@@ -17,7 +17,6 @@ a.contact-color {
 
 .contact-grid {
     display: grid;
-    grid-gap: 1px;
     grid-template-columns: 1fr;
     grid-template-rows:  400px 300px 300px 300px;
     grid-template-areas:
@@ -29,7 +28,7 @@ a.contact-color {
 
     hr {
 
-      height: 2px;
+      height: 1px;
       background-color: #424242;
       border: none;
 
@@ -46,8 +45,8 @@ a.contact-color {
 
     .contact-header {
       text-align: center;
-
     }
+
 
     .button {
       cursor: pointer;
@@ -74,6 +73,8 @@ a.contact-color {
       background: #9E9999;
     }
     contact-picleft>img {
+      border-top: 1px solid white;
+      border-right: none;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -85,6 +86,8 @@ a.contact-color {
       background: #9E9999;
     }
     contact-picmid>img {
+      border-top: 1px solid white;
+      border-right: none;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -96,6 +99,7 @@ a.contact-color {
       background: #9E9999;
     }
     contact-picright>img {
+      border-top: 1px solid white;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -108,7 +112,6 @@ a.contact-color {
 
     .contact-grid {
         display: grid;
-        grid-gap: 1px;
         grid-template-columns: 1fr;
         grid-template-rows:  400px 450px 450px 450px;
         grid-template-areas:
@@ -126,7 +129,6 @@ a.contact-color {
 
     .contact-grid {
         display: grid;
-        grid-gap: 1px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows:  400px 300px;
         grid-template-areas:
@@ -134,6 +136,13 @@ a.contact-color {
             "picleft picmid picright"
         }
 
+    contact-picleft>img {
+        border-right: 1px solid white;
+    }
+
+    contact-picmid>img {
+        border-right: 1px solid white;
+    }
 }
 
 /*MAX HEIGHT STYLES*/

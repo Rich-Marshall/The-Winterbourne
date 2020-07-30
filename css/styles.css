@@ -31,12 +31,11 @@ content {
 }
 
 content>img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 55% 10%;
-    border-bottom: thin solid #E5E4DE;
+    border-bottom: 1px solid #E5E4DE;
 }
 
 
@@ -85,5 +84,6 @@ footer {
 menu grey: #757575
 placeholder grey: #9E9999
 winterbourne yellow: #FFF7D6
+light-yellow for text: #E5E4DE
 winterbourne blue-green: #0F4F5C
 */
