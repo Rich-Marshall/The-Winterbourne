@@ -1,85 +1,76 @@
 /* MOBILE AND GLOBAL STYLES */
+
 /* applies to screens smaller than 500px */
+
 /* and all other screen sized unless overwritten below  */
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100vh auto 650px; /*will be auto*/
-    grid-gap: 0px;
-    grid-template-areas:
-        "content content"
-        "main main"
-        "footer footer"
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100vh auto 650px;
+	/*will be auto*/
+	grid-gap: 0px;
+	grid-template-areas:  "content content"
+                        "main main"
+                        "footer footer"
 }
-
-
 content {
-    grid-area: content;
-    background: #9E9999;
-    margin: 0;
-    position: relative;
-    text-align: center;
+	grid-area: content;
+	background: #9E9999;
+	margin: 0;
+	position: relative;
+	text-align: center;
 }
-
 content>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 55% 10%;
-    border-bottom: 1px solid #E5E4DE;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 55% 10%;
+	border-bottom: 1px solid #E5E4DE;
 }
-
-
-
-
 main {
-    grid-area: main;
-    /* background: #FFF7D6; */
+	grid-area: main;
+	padding: 0 2vw;
+	background: #FFF7D6;
 }
-
-
+main-img {
+	grid-area: main-img;
+	background: #FFF7D6;
+}
 footer {
-    grid-area: footer;
-    background: #0F4F5C;
-    border-top: thin solid #E5E4DE;
+	grid-area: footer;
+	background: #0F4F5C;
+	border-top: thin solid #E5E4DE;
 }
-
-
-
 /* TABLET STYLES */
+
 @media screen and (min-width: 501px) {
-    /* applies to screens wider than 500px */
-
-
+	/* applies to screens wider than 500px */
 }
-
 /* DESKTOP STYLES */
+
 @media screen and (min-width: 1000px) {
-    /* applies to screens wider than 999px */
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100vh auto 400px; /*will be auto*/
-        grid-template-areas:
-            "content content content content content content"
-            "main main main main main main"
-            "footer footer footer footer footer footer"
-    }
+	/* applies to screens wider than 999px */
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 100vh auto auto 400px;
+		/*will be auto*/
+		grid-template-areas:  "content content content content content content"
+                          "main main main main main main"
+                          "main-img main-img main-img main-img main-img main-img "
+                          "footer footer footer footer footer footer"
+	}
 }
-
 /*MAX HEIGHT STYLES*/
-@media screen and (max-height: 650px) {
 
-}
-
+@media screen and (max-height: 650px) {}
 /* Color Hex Codes:
 menu grey: #757575
 placeholder grey: #9E9999

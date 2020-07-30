@@ -1,201 +1,186 @@
 /* MOBILE AND GLOBAL STYLES */
+
 /* applies to screens smaller than 500px */
+
 /* and all other screen sized unless overwritten below  */
 
-
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #424242;
 }
-
-
+hr {
+	height: 2px;
+	background-color: #0F4F5C;
+	width: 50%;
+	margin: auto;
+	border: none;
+	border-radius: 1px;
+}
+hr.wide {
+	width: 75%;
+}
 .index-grid {
-    display: grid;
-
-    grid-template-columns: 1fr ;
-    grid-template-rows:  100px 300px 500px 300px 500px 400px 400px 400px;
-    grid-template-areas:
-        "top"
-        "bookpic"
-        "book"
-        "menupic"
-        "menu"
-        "picleft"
-        "picmid"
-        "picright"
-
-    }
-
-    /*img {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 300px 500px 300px 500px 400px 400px 400px;
+	grid-template-areas:  "top"
+                        "bookpic"
+                        "book""menupic"
+                        "menu"
+                        "picleft"
+                        "picmid"
+                        "picright"
+}
+.index-img-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 300px;
+	grid-template-areas: "picleft picmid picright"
+}
+/*img {
       border: 1px solid white;
     }*/
 
-
-    index-top {
-      grid-area: top;
-      background: #FFF7D6;
-    }
-
-    index-book {
-      grid-area: book;
-      background: #FFF7D6;
-    }
-    index-bookpic {
-      grid-area: bookpic;
-      background: #9E9999;
-    }
-    index-bookpic>img{
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-      border-right: none;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-    }
-
-    index-second {
-      grid-area: second;
-      background: #FFF7D6;
-    }
-
-
-    index-menu {
-      grid-area: menu;
-      background: #FFF7D6;
-    }
-    index-menupic {
-      grid-area: menupic;
-      background: #9E9999;
-    }
-    index-menupic>img{
-      border-top: 1px solid white;
-      border-left: none;
-      border-bottom: 1px solid white;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-    }
-
-    index-third {
-      grid-area: third;
-      background: #FFF7D6;
-    }
-
-    index-picleft {
-      grid-area: picleft;
-      background: #9E9999;
-    }
-    index-picleft>img{
-      border-top: 1px solid white;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-    }
-
-    index-picmid {
-      grid-area: picmid;
-      background: #9E9999;
-    }
-    index-picmid>img{
-      border-top: 1px solid white;
-      border-left: none;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-    }
-
-    index-picright {
-      grid-area: picright;
-      background: #9E9999;
-    }
-    index-picright>img{
-      border-top: 1px solid white;
-      border-left: none;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-    }
-
-
-
-
-
-
+index-top {
+	display: flex;
+	grid-area: top;
+	background: #FFF7D6;
+}
+index-book {
+	display: grid;
+	grid-area: book;
+	background: #FFF7D6;
+	padding: 50px;
+}
+index-bookpic {
+	grid-area: bookpic;
+	background: #9E9999;
+}
+index-bookpic>img {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-right: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+index-second {
+	display: flex;
+	grid-area: second;
+	background: #FFF7D6;
+}
+index-menu {
+	display: grid;
+	grid-area: menu;
+	background: #FFF7D6;
+	padding: 50px;
+}
+index-menupic {
+	grid-area: menupic;
+	background: #9E9999;
+}
+index-menupic>img {
+	border-top: 1px solid white;
+	border-left: none;
+	border-bottom: 1px solid white;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+index-third {
+	display: flex;
+	grid-area: third;
+	background: #FFF7D6;
+}
+index-picleft {
+	grid-area: picleft;
+	background: #9E9999;
+}
+index-picleft>img {
+	border-top: 1px solid white;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+index-picmid {
+	grid-area: picmid;
+	background: #9E9999;
+}
+index-picmid>img {
+	border-top: 1px solid white;
+	border-left: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+index-picright {
+	grid-area: picright;
+	background: #9E9999;
+}
+index-picright>img {
+	border-top: 1px solid white;
+	border-left: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
 /* TABLET STYLES */
+
 @media screen and (min-width: 501px) {
-    /* applies to screens wider than 500px */
-
-    .index-grid {
-        display: grid;
-
-        grid-template-columns: 1fr ;
-        grid-template-rows:  100px 450px 500px 450px 500px 600px 600px 600px;
-        grid-template-areas:
-            "top"
-            "bookpic"
-            "book"
-            "menupic"
-            "menu"
-            "picleft"
-            "picmid"
-            "picright"
-
-        }
-
+	/* applies to screens wider than 500px */
+	.index-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 450px 500px 450px 500px 600px 600px 600px;
+		grid-template-areas:  "top"
+                          "bookpic"
+                          "book"
+                          "menupic"
+                          "menu"
+                          "picleft"
+                          "picmid"
+                          "picright"
+	}
 }
-
 /* DESKTOP STYLES */
+
 @media screen and (min-width: 1000px) {
-    /* applies to screens wider than 999px */
-
-    .index-grid {
-        display: grid;
-
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:  200px 400px 200px 400px 200px 300px;
-        grid-template-areas:
-            "top top top"
-            "bookpic book book"
-            "second second second"
-            "menu menu menupic"
-            "third third third"
-            "picleft picmid picright"
-
-        }
-
-    index-bookpic>img {
-        border-right: 1px solid white;
-    }
-
-    index-menupic>img {
-        border-left: 1px solid white;
-    }
-
-    index-picmid>img {
-        border-left: 1px solid white;
-    }
-
-    index-picright>img {
-        border-left: 1px solid white;
-    }
-
+	/* applies to screens wider than 999px */
+	.index-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 200px 400px 200px 400px 200px;
+		grid-template-areas:  "top top top"
+                          "bookpic book book"
+                          "second second second"
+                          "menu menu menupic"
+                          "third third third"
+	}
+	index-bookpic>img {
+		border-right: 1px solid white;
+	}
+	index-menupic>img {
+		border-left: 1px solid white;
+	}
+	index-picmid>img {
+		border-left: 1px solid white;
+	}
+	index-picright>img {
+		border-left: 1px solid white;
+	}
 }
-
-
-
 /*MAX HEIGHT STYLES*/
-@media screen and (max-height: 650px) {
 
-}
-
+@media screen and (max-height: 650px) {}
 /* Color Hex Codes:
 menu grey: #757575
 placeholder grey: #9E9999
