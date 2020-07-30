@@ -12,6 +12,31 @@ body {
 	box-sizing: border-box;
 	color: #424242;
 }
+
+.button {
+	cursor: pointer;
+	background-color: #0F4F5C;
+	color: #E5E4DE;
+	outline: none;
+	border: none;
+	padding: 20px;
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 17px;
+	margin: 30px 0;
+	border-radius: 2px;
+	transition-duration: 0.2s;
+}
+.button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.button .center{
+    display:inline-block;
+    margin: 0 auto;
+}
+
 hr {
 	height: 2px;
 	background-color: #0F4F5C;
@@ -26,21 +51,24 @@ hr.wide {
 .index-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 100px 300px 500px 300px 500px 400px 400px 400px;
+	grid-template-rows: 100px 300px auto 300px auto;
 	grid-template-areas:  "top"
                         "bookpic"
-                        "book""menupic"
-                        "menu"
-                        "picleft"
+                        "book"
+												"menupic"
+                        "menurog"
+}
+
+.index-img-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 400px 400px 400px;
+	grid-template-areas:  "picleft"
                         "picmid"
                         "picright"
 }
-.index-img-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 300px;
-	grid-template-areas: "picleft picmid picright"
-}
+
+
 /*img {
       border: 1px solid white;
     }*/
@@ -76,7 +104,7 @@ index-second {
 }
 index-menu {
 	display: grid;
-	grid-area: menu;
+	grid-area: menurog;
 	background: #FFF7D6;
 	padding: 50px;
 }
@@ -137,18 +165,25 @@ index-picright>img {
 
 @media screen and (min-width: 501px) {
 	/* applies to screens wider than 500px */
+
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 100px 450px 500px 450px 500px 600px 600px 600px;
+		grid-template-rows: 100px 450px auto 450px auto;
 		grid-template-areas:  "top"
-                          "bookpic"
-                          "book"
-                          "menupic"
-                          "menu"
-                          "picleft"
-                          "picmid"
-                          "picright"
+	                        "bookpic"
+	                        "book"
+													"menupic"
+	                        "menurog"
+	}
+
+	.index-img-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 600px 600px 600px;
+		grid-template-areas:  "picleft"
+	                        "picmid"
+	                        "picright"
 	}
 }
 /* DESKTOP STYLES */
@@ -158,13 +193,21 @@ index-picright>img {
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 200px 400px 200px 400px 200px;
+		grid-template-rows: 200px 550px 200px 600px 200px;
 		grid-template-areas:  "top top top"
                           "bookpic book book"
                           "second second second"
-                          "menu menu menupic"
+                          "menurog menurog menupic"
                           "third third third"
 	}
+
+	.index-img-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 300px;
+		grid-template-areas: "picleft picmid picright"
+	}
+
 	index-bookpic>img {
 		border-right: 1px solid white;
 	}

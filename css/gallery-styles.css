@@ -15,9 +15,15 @@ body {
 .gallery-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 400px 300px 300px 300px 500px 500px 300px 300px 300px 500px 500px;
+	grid-template-rows: 400px;
 	grid-template-areas:  "top"
-                        "one-left"
+}
+
+.gallery-img-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 300px 300px 300px 500px 500px 300px 300px 300px 500px 500px;
+	grid-template-areas:  "one-left"
                         "one-mid"
                         "one-right"
                         "two-left"
@@ -27,17 +33,6 @@ body {
                         "three-right"
                         "four-left"
                         "four-right"
-}
-
-.gallery-img-grid {
-	background-color: red;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 300px 500px 300px 500px;
-	grid-template-areas:  "one-left one-mid one-right"
-												"two-left two-left two-right"
-												"three-left three-mid three-right"
-												"four-left four-right four-right"
 }
 
 hr {
@@ -71,7 +66,7 @@ gallery-top {
 	display: inline-block;
 	font-size: 17px;
 	margin: 10px 10px;
-	border-radius: 2px;
+	border-radius: 4px;
 	transition-duration: 0.2s;
 }
 .button:hover {
@@ -202,9 +197,15 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 400px 450px 450px 450px 750px 750px 450px 450px 450px 750px 750px;
+		grid-template-rows: 400px;
 		grid-template-areas:  "top"
-                          "one-left"
+	}
+
+	.gallery-img-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 450px 450px 450px 750px 750px 450px 450px 450px 750px 750px;
+		grid-template-areas:  "one-left"
                           "one-mid"
                           "one-right"
                           "two-left"
@@ -225,6 +226,17 @@ gallery-four-right>img {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 400px;
 		grid-template-areas:  "top top top"
+	}
+
+	.gallery-img-grid {
+		background-color: red;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 300px 500px 300px 500px;
+		grid-template-areas:  "one-left one-mid one-right"
+													"two-left two-left two-right"
+													"three-left three-mid three-right"
+													"four-left four-right four-right"
 	}
 	gallery-one-left>img {
 		border-bottom: 1px solid white;

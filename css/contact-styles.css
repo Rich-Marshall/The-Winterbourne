@@ -18,19 +18,20 @@ a.contact-color {
 .contact-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 400px 300px 300px 300px;
+	grid-template-rows: 400px;
 	grid-template-areas:  "contact"
-                        "picleft"
-                        "picmid"
-                        "picright"
 }
 
 .contact-img-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 300px;
-	grid-template-areas: "picleft picmid picright"
+	grid-template-columns: 1fr;
+	grid-template-rows: 300px 300px 300px;
+	grid-template-areas:  "picleft"
+                        "picmid"
+                        "picright"
 }
+
+
 
 hr {
 	height: 1px;
@@ -112,12 +113,20 @@ contact-picright>img {
 	.contact-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 400px 450px 450px 450px;
+		grid-template-rows: 400px;
 		grid-template-areas:  "contact"
-                          "picleft"
+
+	}
+
+	.contact-img-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 450px 450px 450px;
+		grid-template-areas:  "picleft"
                           "picmid"
                           "picright"
 	}
+
 }
 /* DESKTOP STYLES */
 
@@ -128,8 +137,15 @@ contact-picright>img {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 400px;
 		grid-template-areas:  "contact contact contact"
-
 	}
+
+	.contact-img-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 300px;
+		grid-template-areas: "picleft picmid picright"
+	}
+
 	contact-picleft>img {
 		border-right: 1px solid white;
 	}

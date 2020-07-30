@@ -11,14 +11,16 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 100vh auto 650px;
+	grid-template-rows: 100vh auto auto 650px;
 	/*will be auto*/
 	grid-gap: 0px;
 	grid-template-areas:  "content content"
                         "main main"
+												"main-img main-img"
                         "footer footer"
 }
 content {
@@ -37,7 +39,7 @@ content>img {
 }
 main {
 	grid-area: main;
-	padding: 0 2vw;
+	padding: 0;
 	background: #FFF7D6;
 }
 main-img {
@@ -67,6 +69,10 @@ footer {
                           "main-img main-img main-img main-img main-img main-img "
                           "footer footer footer footer footer footer"
 	}
+	main {
+		padding: 0 2vw;
+	}
+
 }
 /*MAX HEIGHT STYLES*/
 
