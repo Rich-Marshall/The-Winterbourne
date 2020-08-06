@@ -18,8 +18,10 @@ a.contact-color {
 .contact-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 400px;
-	grid-template-areas:  "contact"
+	grid-template-rows: auto auto auto;
+	grid-template-areas:  "top"
+												"text"
+												"map"
 }
 
 .contact-img-grid {
@@ -31,20 +33,68 @@ a.contact-color {
                         "picright"
 }
 
-
-
 hr {
-	height: 1px;
-	background-color: #424242;
+	height: 2px;
+	background-color: #0F4F5C;
+	width: 50%;
+	margin: auto;
 	border: none;
+	border-radius: 1px;
 }
-contact-contact {
-	grid-area: gallery;
+hr.wide {
+	width: 75%;
+}
+
+contact-top {
+	padding-top: 50px;
+	grid-area: top;
+	/* background: red; */
+	display: grid;
+
+}
+
+contact-text {
+	display: grid;
+	grid-area: text;
 	background: #FFF7D6;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 5vw;
+	text-align: center;
 }
+
+.contact-info-wrapper{
+	display: flex;
+	text-align: left;
+}
+
+.contact-address-wrapper{
+	display: grid;
+
+}
+
+contact-map {
+	grid-area: map;
+	/* background: blue; */
+	text-align: center;
+	display: grid;
+}
+
+.map-wrapper {
+	display: flex;
+	position: relative;
+	height: 0;
+	padding-bottom: 75%;
+	/* background: orange; */
+	margin: 2vw;
+}
+
+.map-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
 .contact-header {
 	text-align: center;
 }
@@ -55,18 +105,24 @@ contact-contact {
 	outline: none;
 	border: none;
 	padding: 20px;
-	width: 150px;
+	width: 300px;
+	height: 75px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 17px;
-	margin: 10px 10px;
+
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-top: 30px;
+	transform: translateX(-50%);
 	border-radius: 2px;
 	transition-duration: 0.2s;
 }
 .button:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 contact-contact {
 	grid-area: contact;
 	background: #FFF7D6;
@@ -113,9 +169,10 @@ contact-picright>img {
 	.contact-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 400px;
-		grid-template-areas:  "contact"
-
+		grid-template-rows: auto auto auto;
+		grid-template-areas:  "top"
+													"text"
+													"map"
 	}
 
 	.contact-img-grid {
@@ -134,9 +191,11 @@ contact-picright>img {
 	/* applies to screens wider than 999px */
 	.contact-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 400px;
-		grid-template-areas:  "contact contact contact"
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas:  "top top"
+													/*"mid mid mid"*/
+													"map text"
 	}
 
 	.contact-img-grid {
@@ -145,6 +204,29 @@ contact-picright>img {
 		grid-template-rows: 300px;
 		grid-template-areas: "picleft picmid picright"
 	}
+
+
+
+	.button {
+		cursor: pointer;
+		background-color: #0F4F5C;
+		color: #E5E4DE;
+		outline: none;
+		border: none;
+		padding: 20px;
+		width: 150px;
+		height: auto;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 17px;
+		margin: 30px 20px;
+		transform: translateX(0%);*/
+		border-radius: 2px;
+		transition-duration: 0.2s;
+	}
+
+
 
 	contact-picleft>img {
 		border-right: 1px solid white;

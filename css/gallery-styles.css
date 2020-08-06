@@ -4,6 +4,8 @@
 
 /* and all other screen sized unless overwritten below  */
 
+/* winterbourne yellow: #FFF7D6 */
+
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -15,8 +17,9 @@ body {
 .gallery-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 400px;
+	grid-template-rows: auto auto;
 	grid-template-areas:  "top"
+												"bottom"
 }
 
 .gallery-img-grid {
@@ -38,21 +41,49 @@ body {
 hr {
 	height: 2px;
 	background-color: #0F4F5C;
-	width: 75%;
+	width: 50%;
 	margin: auto;
 	border: none;
 	border-radius: 1px;
 }
-gallery-top {
-	grid-area: top;
-	background: #FFF7D6;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+hr.wide {
+	width: 75%;
 }
+gallery-top {
+	padding-top: 50px;
+	grid-area: top;
+	/* background: red; */
+	display: grid;
+}
+
+gallery-mid {
+	grid-area: mid;
+	/*background: green;*/
+	display: flex;
+}
+
+gallery-mid2 {
+	padding: 30px;
+	grid-area: mid2;
+	/*background: yellow;*/
+	display: flex;
+}
+
+
+gallery-bottom {
+	grid-area: bottom;
+	/* background: blue; */
+	display: grid;
+	text-align: center;
+	vertical-align: middle;
+	line-height: auto;
+	padding-bottom: 30px;
+}
+
 .gallery-header {
 	text-align: center;
 }
+
 .button {
 	cursor: pointer;
 	background-color: #0F4F5C;
@@ -60,18 +91,24 @@ gallery-top {
 	outline: none;
 	border: none;
 	padding: 20px;
-	width: 150px;
+	width: 300px;
+	height: 75px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 17px;
-	margin: 10px 10px;
-	border-radius: 4px;
+
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-top: 30px;
+	transform: translateX(-50%);
+	border-radius: 2px;
 	transition-duration: 0.2s;
 }
 .button:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 gallery-one-left {
 	grid-area: one-left;
 	background: #9E9999;
@@ -197,8 +234,9 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 400px;
+		grid-template-rows: auto auto;
 		grid-template-areas:  "top"
+													"bottom"
 	}
 
 	.gallery-img-grid {
@@ -224,8 +262,9 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 400px;
+		grid-template-rows: auto auto auto auto;
 		grid-template-areas:  "top top top"
+													"bottom bottom bottom"
 	}
 
 	.gallery-img-grid {
@@ -238,6 +277,26 @@ gallery-four-right>img {
 													"three-left three-mid three-right"
 													"four-left four-right four-right"
 	}
+
+	.button {
+		cursor: pointer;
+		background-color: #0F4F5C;
+		color: #E5E4DE;
+		outline: none;
+		border: none;
+		padding: 20px;
+		width: 150px;
+		height: auto;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 17px;
+		margin: 30px 20px;
+		transform: translateX(0%);*/
+		border-radius: 2px;
+		transition-duration: 0.2s;
+	}
+
 	gallery-one-left>img {
 		border-bottom: 1px solid white;
 		border-right: 1px solid white;
