@@ -33,6 +33,10 @@ a.contact-color {
                         "picright"
 }
 
+.left-align {
+  text-align: left;
+}
+
 hr {
 	height: 2px;
 	background-color: #0F4F5C;
@@ -57,19 +61,14 @@ contact-text {
 	display: grid;
 	grid-area: text;
 	background: #FFF7D6;
-	padding: 5vw;
+	margin: 10vw 5vw;
 	text-align: center;
 }
 
-.contact-info-wrapper{
+.contact-wrapper {
 	display: flex;
-	text-align: left;
 }
 
-.contact-address-wrapper{
-	display: grid;
-
-}
 
 contact-map {
 	grid-area: map;
@@ -185,6 +184,7 @@ contact-picright>img {
 	}
 
 }
+
 /* DESKTOP STYLES */
 
 @media screen and (min-width: 1000px) {
@@ -205,6 +205,11 @@ contact-picright>img {
 		grid-template-areas: "picleft picmid picright"
 	}
 
+
+	contact-text {
+		padding: 2vw;
+		margin: 0;
+	}
 
 
 	.button {
@@ -235,6 +240,15 @@ contact-picright>img {
 		border-right: 1px solid white;
 	}
 }
+
+/* DESKTOP SECONDARY STYLES */
+@media screen and (min-width: 1500px) {
+
+	contact-text {
+		padding: 10vw 5vw;
+	}
+}
+
 /*MAX HEIGHT STYLES*/
 
 @media screen and (max-height: 650px) {}
