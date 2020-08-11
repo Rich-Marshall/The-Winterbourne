@@ -53,12 +53,15 @@ hr.wide {
 .index-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 100px 300px auto 300px auto;
-	grid-template-areas:  "top"
+	grid-template-rows: 150px 100px 300px auto 300px auto 300px auto;
+	grid-template-areas:  "title"
+												"top"
                         "bookpic"
                         "book"
 												"menupic"
                         "menurog"
+												"coffeepic"
+												"coffee"
 }
 
 .index-img-grid {
@@ -73,12 +76,23 @@ hr.wide {
 
 /*img {
       border: 1px solid white;
-    }*/
+}*/
 
+index-title {
+	display: grid;
+	grid-area: title;
+	background: #FFF7D6;
+	padding-top: 50px;
+}
+
+.title-header {
+	text-align: center;
+}
 index-top {
 	display: flex;
 	grid-area: top;
 	background: #FFF7D6;
+	padding-bottom: 100px;
 }
 index-book {
 	display: grid;
@@ -128,6 +142,31 @@ index-third {
 	grid-area: third;
 	background: #FFF7D6;
 }
+index-coffee {
+	display: grid;
+	grid-area: coffee;
+	background: #FFF7D6;
+	padding: 50px;
+}
+index-coffeepic {
+	grid-area: coffeepic;
+	background: #9E9999;
+}
+index-coffeepic>img {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-right: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+index-fourth {
+	display: flex;
+	grid-area: fourth;
+	background: #FFF7D6;
+}
+
 index-picleft {
 	grid-area: picleft;
 	background: #9E9999;
@@ -171,12 +210,15 @@ index-picright>img {
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 100px 450px auto 450px auto;
-		grid-template-areas:  "top"
+		grid-template-rows: 150px 100px 450px auto 450px auto 450px auto;
+		grid-template-areas:  "title"
+													"top"
 	                        "bookpic"
 	                        "book"
 													"menupic"
 	                        "menurog"
+													"coffeepic"
+													"coffee"
 	}
 
 	.index-img-grid {
@@ -195,12 +237,15 @@ index-picright>img {
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 200px 550px 200px 600px 200px;
-		grid-template-areas:  "top top top"
+		grid-template-rows: 150px 100px 550px 200px 600px 200px 550px 200px;
+		grid-template-areas:  "title title title"
+													"top top top"
                           "bookpic book book"
                           "second second second"
                           "menurog menurog menupic"
                           "third third third"
+													"coffeepic coffee coffee"
+													"fourth fourth fourth"
 	}
 
 	.index-img-grid {
