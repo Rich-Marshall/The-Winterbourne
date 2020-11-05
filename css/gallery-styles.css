@@ -17,8 +17,9 @@ body {
 .gallery-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto auto;
+	grid-template-rows: auto 50px auto;
 	grid-template-areas:  "top"
+												"order"
 												"bottom"
 }
 
@@ -68,6 +69,28 @@ gallery-mid2 {
 	/*background: yellow;*/
 	display: flex;
 }
+
+gallery-order {
+	grid-area: order;
+	background: #FFF7D6;
+	padding-bottom: 25px;
+}
+gallery-order> img {
+	width: auto;
+	height: 50px;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translateX(-50%);
+	border-radius: 2px;
+	transition-duration: 0.2s;
+	object-fit: contain;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+gallery-order> img:hover {
+box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 
 gallery-bottom {
@@ -234,8 +257,9 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: auto auto;
+		grid-template-rows: auto 100px auto;
 		grid-template-areas:  "top"
+													"order"
 													"bottom"
 	}
 
@@ -262,8 +286,9 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto auto auto auto;
+		grid-template-rows: auto 100px auto;
 		grid-template-areas:  "top top top"
+													"order order order"
 													"bottom bottom bottom"
 	}
 
@@ -291,7 +316,9 @@ gallery-four-right>img {
 		text-decoration: none;
 		display: inline-block;
 		font-size: 17px;
-		margin: 30px 20px;
+		margin-top: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
 		transform: translateX(0%);*/
 		border-radius: 2px;
 		transition-duration: 0.2s;
