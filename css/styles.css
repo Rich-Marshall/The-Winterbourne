@@ -18,7 +18,7 @@ body {
 
 .grid {
 	display: grid;
-	min-width: 320px;
+	/* min-width: 350px; */
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 100vh auto auto 650px;
 	/*will be auto*/
