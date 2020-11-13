@@ -42,14 +42,14 @@ content>img {
 	height: 100%;
 	object-fit: cover;
 	object-position: 55% 10%;
-	border-bottom: 1px solid #E5E4DE;
+	border-bottom: 1px solid #eeede8;
 }
 main {
 	min-width: 350px;
 	/* width: 100%; */
 	grid-area: main;
 	padding: 0;
-	background: #FFF7D6;
+	background: #eeede8;
 }
 main-img {
 	min-width: 350px;
@@ -61,8 +61,8 @@ footer {
 	min-width: 350px;
 	/* width: 100%; */
 	grid-area: footer;
-	background: #0F4F5C;
-	border-top: thin solid #E5E4DE;
+	background: #2e4b4f;
+	border-top: thin solid #eeede8;
 }
 /* TABLET STYLES */
 
@@ -90,10 +90,6 @@ footer {
 /*MAX HEIGHT STYLES*/
 
 @media screen and (max-height: 650px) {}
-/* Color Hex Codes:
-menu grey: #757575
-placeholder grey: #9E9999
-winterbourne yellow: #FFF7D6
-light-yellow for text: #E5E4DE
-winterbourne blue-green: #0F4F5C
-*/
+	/* Color Hex Codes:
+	now in readme
+	*/

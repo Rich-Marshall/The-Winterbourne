@@ -18,8 +18,8 @@ a {
 
 /* .button {
 	cursor: pointer;
-	background-color: #0F4F5C;
-	color: #E5E4DE;
+	background-color: #2e4b4f;
+	color: #eeede8;
 	outline: none;
 	border: none;
 	padding: 20px;
@@ -41,8 +41,8 @@ a {
 
 .button {
 	cursor: pointer;
-	background-color: #0F4F5C;
-	color: #E5E4DE;
+	background-color: #2e4b4f;
+	color: #eeede8;
 	outline: none;
 	border: none;
 	padding: 20px;
@@ -65,8 +65,8 @@ a {
 
 .button-mobile {
 	cursor: pointer;
-	background-color: #0F4F5C;
-	color: #E5E4DE;
+	background-color: #2e4b4f;
+	color: #eeede8;
 	outline: none;
 	border: none;
 	padding: 20px;
@@ -90,7 +90,7 @@ a {
 
 hr {
 	height: 2px;
-	background-color: #0F4F5C;
+	background-color: #2e4b4f;
 	width: 50%;
 	margin: auto;
 	border: none;
@@ -102,7 +102,7 @@ hr.wide {
 .index-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 150px 25px 100px 300px auto auto 300px auto auto 300px auto auto 300px auto auto;
+	grid-template-rows: 150px 25px auto 300px auto auto 300px auto auto 300px auto auto 300px auto auto;
 	grid-template-areas:  "title"
 												"top"
 												"order"
@@ -137,7 +137,7 @@ hr.wide {
 index-title {
 	display: grid;
 	grid-area: title;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding-top: 50px;
 }
 
@@ -147,18 +147,25 @@ index-title {
 index-top {
 	display: flex;
 	grid-area: top;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding-bottom: 25px;
 }
 
 index-order {
 	grid-area: order;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding-bottom: 25px;
+
+}
+
+.text {
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 index-order> .kuul {
 	border-radius: 2px;
- 	background-color: #FFF7D6;
+ 	background-color: #eeede8;
 	width: 328px;
 	height: 50px;
 	margin: auto;
@@ -181,8 +188,8 @@ box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19)
 }
 
 
-/* background-color: #0F4F5C;
-color: #E5E4DE;
+/* background-color: #2e4b4f;
+color: #eeede8;
 outline: none;
 border: none;
 padding: 20px;
@@ -206,7 +213,7 @@ box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
 index-book {
 	display: grid;
 	grid-area: book;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding: 50px;
 }
 index-bookpic {
@@ -226,7 +233,7 @@ index-bookpic>img {
 index-book-mobile {
 	display: grid;
 	grid-area: book-mobile;
-	background: #FFF7D6;
+	background: #eeede8;
 	text-align: center;
 
 }
@@ -234,12 +241,12 @@ index-book-mobile {
 index-second {
 	display: flex;
 	grid-area: second;
-	background: #FFF7D6;
+	background: #eeede8;
 }
 index-menu {
 	display: grid;
 	grid-area: menurog;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding: 50px;
 }
 index-menupic {
@@ -259,18 +266,18 @@ index-menupic>img {
 index-menu-mobile {
 	display: grid;
 	grid-area: menurog-mobile;
-	background: #FFF7D6;
+	background: #eeede8;
 	text-align: center;
 }
 index-third {
 	display: flex;
 	grid-area: third;
-	background: #FFF7D6;
+	background: #eeede8;
 }
 index-coffee {
 	display: grid;
 	grid-area: coffee;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding: 50px;
 }
 index-coffeepic {
@@ -289,19 +296,19 @@ index-coffeepic>img {
 index-coffee-mobile {
 	display: grid;
 	grid-area: coffee-mobile;
-	background: #FFF7D6;
+	background: #eeede8;
 	text-align: center;
 }
 index-fourth {
 	display: flex;
 	grid-area: fourth;
-	background: #FFF7D6;
+	background: #eeede8;
 }
 
 index-blanche {
 	display: grid;
 	grid-area: blanche;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding: 50px;
 }
 index-blanchepic {
@@ -321,14 +328,14 @@ index-blanchepic>img {
 index-blanche-mobile {
 	display: grid;
 	grid-area: blanche-mobile;
-	background: #FFF7D6;
+	background: #eeede8;
 	text-align: center;
 }
 
 index-fifth {
 	display: flex;
 	grid-area: fifth;
-	background: #FFF7D6;
+	background: #eeede8;
 }
 
 index-picleft {
@@ -374,7 +381,7 @@ index-picright>img {
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 150px 25px 100px 450px auto 450px auto 450px auto 450px auto;
+		grid-template-rows: 150px 25px auto 450px auto 450px auto 450px auto 450px auto;
 		grid-template-areas:  "title"
 													"top"
 													"order"
@@ -405,6 +412,10 @@ index-picright>img {
 	.button-mobile{
 		display: none;
 	}
+	.text	{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
 }
 /* DESKTOP STYLES */
 
@@ -413,7 +424,7 @@ index-picright>img {
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 150px 25px 100px 550px 200px 600px 200px 400px 200px 450px 200px;
+		grid-template-rows: 150px 25px 200px 550px 200px 600px 200px 400px 200px 450px 200px;
 		grid-template-areas:  "title title title"
 													"top top top"
 													"order order order"
@@ -436,8 +447,8 @@ index-picright>img {
 
 	.button {
 		cursor: pointer;
-		background-color: #0F4F5C;
-		color: #E5E4DE;
+		background-color: #2e4b4f;
+		color: #eeede8;
 		outline: none;
 		border: none;
 		padding: 20px;
@@ -467,6 +478,11 @@ index-picright>img {
 	index-picright>img {
 		border-left: 1px solid white;
 	}
+
+	.text	{
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 }
 /*MAX HEIGHT STYLES*/
 
@@ -494,8 +510,5 @@ index-picright>img {
 		}
 }
 /* Color Hex Codes:
-menu grey: #757575
-placeholder grey: #9E9999
-winterbourne yellow: #FFF7D6
-winterbourne blue-green: #0F4F5C
+now in readme
 */

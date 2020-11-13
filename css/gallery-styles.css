@@ -4,7 +4,7 @@
 
 /* and all other screen sized unless overwritten below  */
 
-/* winterbourne yellow: #FFF7D6 */
+/* winterbourne yellow: #eeede8 */
 
 body {
 	margin: 0;
@@ -17,7 +17,7 @@ body {
 .gallery-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 100px auto;
+	grid-template-rows: auto auto auto;
 	grid-template-areas:  "top"
 												"order"
 												"bottom"
@@ -41,7 +41,7 @@ body {
 
 hr {
 	height: 2px;
-	background-color: #0F4F5C;
+	background-color: #2e4b4f;
 	width: 50%;
 	margin: auto;
 	border: none;
@@ -72,12 +72,18 @@ gallery-mid2 {
 
 gallery-order {
 	grid-area: order;
-	background: #FFF7D6;
+	background: #eeede8;
 	padding-bottom: 25px;
 }
+.text {
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 gallery-order> .kuul {
 	border-radius: 2px;
- 	background-color: #FFF7D6;
+ 	background-color: #eeede8;
 	width: 328px;
 	height: 50px;
 	margin: auto;
@@ -117,8 +123,8 @@ gallery-bottom {
 
 .button {
 	cursor: pointer;
-	background-color: #0F4F5C;
-	color: #E5E4DE;
+	background-color: #2e4b4f;
+	color: #eeede8;
 	outline: none;
 	border: none;
 	padding: 20px;
@@ -267,7 +273,7 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: auto 100px auto;
+		grid-template-rows: auto auto auto;
 		grid-template-areas:  "top"
 													"order"
 													"bottom"
@@ -288,6 +294,10 @@ gallery-four-right>img {
                           "four-left"
                           "four-right"
 	}
+	.text {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }
 /* DESKTOP STYLES */
 
@@ -296,7 +306,7 @@ gallery-four-right>img {
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto 100px auto;
+		grid-template-rows: auto 200px auto;
 		grid-template-areas:  "top top top"
 													"order order order"
 													"bottom bottom bottom"
@@ -315,8 +325,8 @@ gallery-four-right>img {
 
 	.button {
 		cursor: pointer;
-		background-color: #0F4F5C;
-		color: #E5E4DE;
+		background-color: #2e4b4f;
+		color: #eeede8;
 		outline: none;
 		border: none;
 		padding: 20px;
@@ -355,13 +365,15 @@ gallery-four-right>img {
 		border-right: 1px solid white;
 		border-bottom: none;
 	}
+
+	.text {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 }
 /*MAX HEIGHT STYLES*/
 
 @media screen and (max-height: 650px) {}
-/* Color Hex Codes:
-menu grey: #757575
-placeholder grey: #9E9999
-winterbourne yellow: #FFF7D6
-winterbourne blue-green: #0F4F5C
-*/
+	/* Color Hex Codes:
+	now in readme
+	*/

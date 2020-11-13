@@ -12,7 +12,7 @@ body {
 	box-sizing: border-box;
 }
 a.footer-color {
-	color: #E5E4DE;
+	color: #eeede8;
 }
 .footer-grid {
 	display: grid;
@@ -25,7 +25,7 @@ a.footer-color {
 }
 item-a {
 	z-index: ;
-	color: #E5E4DE;
+	color: #eeede8;
 	grid-area: phone;
 	position: relative;
 }
@@ -46,7 +46,7 @@ item-a p {
 	font-size: 0.5em;
 }
 item-b {
-	color: #E5E4DE;
+	color: #eeede8;
 	grid-area: restaurant;
 	position: relative;
 }
@@ -62,7 +62,7 @@ item-b p {
 }
 item-c {
 	grid-area: bar;
-	color: #E5E4DE;
+	color: #eeede8;
 	position: relative;
 }
 item-c p {
@@ -77,12 +77,12 @@ item-c p {
 }
 item-d {
 	grid-area: bottom;
-	color: #E5E4DE;
+	color: #eeede8;
 	position: relative;
 	height: 50px;
 }
 item-d p {
-	border-top: thin solid #E5E4DE;
+	border-top: thin solid #eeede8;
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -117,7 +117,7 @@ item-d p a {
                           "restaurant bottom bar"
 	}
 	item-d p {
-		border-top: thin solid #E5E4DE;
+		border-top: thin solid #eeede8;
 		width: 100%;
 	}
 	item-b p {
@@ -130,9 +130,6 @@ item-d p a {
 /*MAX HEIGHT STYLES*/
 
 @media screen and (max-height: 650px) {}
-/* Color Hex Codes:
-menu grey: #757575
-placeholder grey: #9E9999
-winterbourne yellow: #FFF7D6
-winterbourne blue-green: #0F4F5C
-*/
+	/* Color Hex Codes:
+	now in readme
+	*/
