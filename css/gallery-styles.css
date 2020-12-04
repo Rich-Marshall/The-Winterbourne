@@ -26,8 +26,10 @@ body {
 .gallery-img-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 300px 300px 300px 500px 500px 300px 300px 300px 500px 500px;
-	grid-template-areas:  "one-left"
+	grid-template-rows: 500px 500px 300px 300px 300px 500px 500px 300px 300px 300px 500px 500px;
+	grid-template-areas:  "pod-left"
+												"pod-right"
+												"one-left"
                         "one-mid"
                         "one-right"
                         "two-left"
@@ -147,6 +149,28 @@ gallery-bottom {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+gallery-pod-left {
+	grid-area: pod-left;
+	background: #9E9999;
+}
+gallery-pod-left>img {
+	border-right: none;
+	border-bottom: 1px solid white;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+gallery-pod-right {
+	grid-area: pod-right;
+	background: #9E9999;
+}
+gallery-pod-right>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 30%;
+}
 
 gallery-one-left {
 	grid-area: one-left;
@@ -282,8 +306,10 @@ gallery-four-right>img {
 	.gallery-img-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 450px 450px 450px 750px 750px 450px 450px 450px 750px 750px;
-		grid-template-areas:  "one-left"
+		grid-template-rows: 750px 750px 450px 450px 450px 750px 750px 450px 450px 450px 750px 750px;
+		grid-template-areas:  "pod-left"
+													"pod-right"
+													"one-left"
                           "one-mid"
                           "one-right"
                           "two-left"
@@ -316,8 +342,9 @@ gallery-four-right>img {
 		background-color: red;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 300px 500px 300px 500px;
-		grid-template-areas:  "one-left one-mid one-right"
+		grid-template-rows: 500px 300px 500px 300px 500px;
+		grid-template-areas:  "pod-left pod-right pod-right"
+													"one-left one-mid one-right"
 													"two-left two-left two-right"
 													"three-left three-mid three-right"
 													"four-left four-right four-right"
@@ -342,6 +369,11 @@ gallery-four-right>img {
 		transform: translateX(0%);*/
 		border-radius: 2px;
 		transition-duration: 0.2s;
+	}
+
+	gallery-pod-left>img {
+		border-right: 1px solid white;
+		border-bottom: none;
 	}
 
 	gallery-one-left>img {

@@ -42,6 +42,11 @@ item-a p {
 .big {
 	font-size: 2em;
 }
+
+.medium {
+	font-size: 1.5em;
+}
+
 .small {
 	font-size: 0.5em;
 }
