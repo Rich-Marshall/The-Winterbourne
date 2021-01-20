@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  if($(window).width() >= 1000)
+  if($(window).width() > 1000)
   {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
@@ -26,7 +26,7 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-  if($(window).width() >= 1000)
+  if($(window).width() > 1000)
   {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
