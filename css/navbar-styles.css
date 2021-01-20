@@ -15,7 +15,13 @@ body {
 * {
 	margin: 0;
 	padding: 0;
+
 	box-sizing: border-box;
+	transition: top 0.5s;
+}
+
+nav {
+	top: 0;
 }
 body.stop-transition .nav-links {
 	transition: none !important;
@@ -34,7 +40,7 @@ a {} nav {
 	box-shadow: 0px 1px 20px #424242;
 }
 .active {
-	background: red;
+
 }
 .cover {
 	z-index: 200;
@@ -194,6 +200,7 @@ a {} nav {
 @media screen and (min-width: 1001px) {
 	/* applies to screens wider than 1000px */
 	nav {
+		top: 0;
 		height: 150px;
 		border-bottom: thin solid #eeede8;
 	}
