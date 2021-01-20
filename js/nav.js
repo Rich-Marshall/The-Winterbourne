@@ -16,11 +16,16 @@ $(document).ready(function(){
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (currentScrollPos < 150) {
       document.getElementById("nav").style.top = "0";
-    } else {        document.getElementById("nav").style.top = "-199px";
-    }
+    } else {
+      if (prevScrollpos > (currentScrollPos)) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-199px";
+      }
       prevScrollpos = currentScrollPos;
+      }
     }
   }
 });
@@ -43,12 +48,16 @@ $(window).resize(function(){
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (currentScrollPos < 150) {
       document.getElementById("nav").style.top = "0";
     } else {
-      document.getElementById("nav").style.top = "-199px";
-    }
+      if (prevScrollpos > (currentScrollPos)) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-199px";
+      }
       prevScrollpos = currentScrollPos;
+      }
     }
   }
 });
