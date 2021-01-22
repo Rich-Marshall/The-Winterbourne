@@ -102,8 +102,9 @@ hr.wide {
 .index-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 150px 25px auto 300px auto auto 300px auto auto 300px auto auto 300px auto auto;
-	grid-template-areas:  "title"
+	grid-template-rows: auto 150px 25px auto 300px auto auto 300px auto auto 300px auto auto 300px auto auto;
+	grid-template-areas:  "covid"
+												"title"
 												"top"
 												"order"
                         "bookpic"
@@ -134,11 +135,47 @@ hr.wide {
       border: 1px solid white;
 }*/
 
+
+index-covid {
+	display: grid;
+	grid-area: covid;
+	padding: 30px;
+	padding-bottom: 0px;
+}
+
+index-covid > .covidbox {
+	text-align: center;
+	border-radius: 10px;
+	background: red;
+	padding: 3px;
+}
+
+.covidbox > .inner {
+	display: block;
+	height: 100%;
+	border-radius: 7px;
+	background: pink;
+	padding: 20px 20px;
+}
+
+.inner > .textwrap1 {
+	padding-top: 10px;
+}
+.inner > .textwrap2 {
+	padding-top: 10px;
+}
+.inner > .textwrap3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
 index-title {
 	display: grid;
 	grid-area: title;
 	background: #eeede8;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 .title-header {
@@ -381,8 +418,9 @@ index-picright>img {
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 150px 25px auto 450px auto 450px auto 450px auto 450px auto;
-		grid-template-areas:  "title"
+		grid-template-rows: auto 150px 25px auto 450px auto 450px auto 450px auto 450px auto;
+		grid-template-areas:  "covid"
+													"title"
 													"top"
 													"order"
 	                        "bookpic"
@@ -416,6 +454,10 @@ index-picright>img {
 		padding-left: 100px;
 		padding-right: 100px;
 	}
+
+	.covidbox > .inner {
+		padding: 20px 30px;
+	}
 }
 /* DESKTOP STYLES */
 
@@ -424,8 +466,9 @@ index-picright>img {
 	.index-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 150px 25px 200px 550px 200px 600px 200px 400px 200px 450px 200px;
-		grid-template-areas:  "title title title"
+		grid-template-rows: auto 150px 25px 200px 550px 200px 600px 200px 400px 200px 450px 200px;
+		grid-template-areas:  "covid covid covid"
+													"title title title"
 													"top top top"
 													"order order order"
                           "bookpic book book"
@@ -482,6 +525,9 @@ index-picright>img {
 	.text	{
 		padding-left: 200px;
 		padding-right: 200px;
+	}
+	.covidbox > .inner {
+		padding: 20px 100px;
 	}
 }
 /*MAX HEIGHT STYLES*/
