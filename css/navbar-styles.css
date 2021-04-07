@@ -78,7 +78,7 @@ a {} nav {
 	position: absolute;
 	top: 200px;
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	background-color: #424242;
 }
 .nav-links .current {
@@ -141,7 +141,7 @@ a {} nav {
 @media screen and (max-width: 500px) {
 	/* applies to screens narrower than 500px */
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1131px) {
 	/* applies to screens narrower than 1000px */
 	body {
 		overflow-x: hidden;
@@ -197,7 +197,7 @@ a {} nav {
 }
 /* DESKTOP STYLES */
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1131px) {
 	/* applies to screens wider than 1000px */
 	nav {
 		top: 0;
@@ -233,6 +233,28 @@ a {} nav {
 		position: static;
 	}
 }
+
+@media screen and (max-width: 1130px) {
+		/* applies to screens wider than 1275px */
+		.burger-wrap {
+			display: flex;
+		}
+	}
+
+	@media screen and (min-width: 1131px) {
+			/* applies to screens wider than 1275px */
+			.burger-wrap {
+				display: none;
+			}
+		}
+
+	@media screen and (min-width: 1275px) {
+			/* applies to screens wider than 1275px */
+			.burger-wrap {
+				display: flex;
+			}
+		}
+
 /* Color Hex Codes:
 now in readme
 */
